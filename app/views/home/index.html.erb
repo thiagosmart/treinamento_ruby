@@ -1,1 +1,12 @@
+
+#sera renderizado no aplication.html.erb
 <h3>Pagina Principal</h3>
+
+<ul>
+<% @produtos.each do |produto|%>
+<li>
+<div><b>Id:</b><%= produto.id %></div>
+<div><b>Nome:</b><%=produto.nome%></div>
+</li>
+<%end%>
+</ul>
